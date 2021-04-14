@@ -1,0 +1,165 @@
+:root{
+    --primaryColor: #0070F3;
+    --backgroundColor: whitesmoke;
+    --titleFont: 34px;
+    --bodyText: 21px;
+    --caption: 16px;
+  }
+  
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,body{
+    height: 100vh;
+    background-color: var(--backgroundColor);
+    line-height: 1.5;
+  }
+
+  a{
+      text-decoration: none;
+  }
+  
+ ul li a{
+    color: black;
+  }
+  
+  ul li a:hover{
+    color: var(--primaryColor)
+  }
+  
+  
+  p, li{
+    font-size: var(--bodyText);
+  }
+  
+  p{
+      margin-top: .6rem;
+  }
+
+.navbar{
+    padding: 2rem;
+    
+  }
+  
+  .navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  
+  
+  
+  .hero-section{
+    background:  url('https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8NHx8Y2FrZXN8ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center bottom;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;  
+    height: 30rem;
+  }
+  
+  h1{
+    font-size: var(--titleFont);
+    font-weight: bold;
+    line-height: 2;
+  }
+  
+  
+  .cta{
+      background-color: var(--primaryColor);
+      border-radius: 10px;
+      padding: 1rem;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin-bottom: 1rem;
+      color: white;
+      font-size: larger;
+  }
+
+
+  .cta:hover{
+      background-color: #2c7fdf;
+  }
+
+  .services-section{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+text-align: left;
+padding: 2rem;
+margin-top: 5rem;
+  }
+
+
+
+  .services-section h1{
+      color: var(--primaryColor);
+      text-align: center;
+  }
+
+  .services-section ul li{
+      margin-left: 2rem;
+  }
+
+  .catalogue-section{
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(auto, 300px));
+    padding-top: 4rem;
+   gap: 2rem;
+   justify-content: center;
+   align-items: center;
+   margin-top: 6rem;
+  }
+  
+  .catalogue-section .img{
+    overflow: hidden;
+    border-radius: 12px;
+    height: 15rem; 
+      box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  }
+  
+  img{
+    transition: transform .3s ease-in-out;
+  }
+ 
+
+img:hover{
+    transform: scale(1.1);
+}
+
+  img{
+    width: 100%;
+    height: 15rem;
+  }
+
+  
+ footer{
+     background-color: silver;
+     display: flex;
+     align-items: center;
+    flex-direction: column;
+    padding-top: 2rem;
+    margin-top: 6rem;
+ }
+
+ footer p{
+     font-size: var(--caption);
+     margin-top: .2rem;
+ }
+
+ footer span{
+     font-size: var(--bodyText);
+ }
+
+ footer p a{
+     color:  blue;
+ }
